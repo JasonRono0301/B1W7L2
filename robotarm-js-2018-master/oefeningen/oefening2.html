@@ -11,11 +11,31 @@
             robotArm.loadLevel("exercise 2");
             
             // Jou instructies volgen hier
-            var  color = robotArm.scan();//Variabele voor de color scan zodra de robot arm de blok oppakt.
-          
+              
+            robotArm.grab();
+            for(i=0; i<=8; i++){
+                robotArm.moveRight();
+            }
+                robotArm.drop();
+            for(i=0; i<=4; i++){
+                robotArm.moveLeft();
+            }
+                robotArm.grab();
+            for(i=0; i<=4; i++){
+                robotArm.moveRight();
+            }
+                robotArm.drop();
+            for(i=0; i<=1; i++){
+                robotArm.moveLeft();
+            }
+                robotArm.grab();
+            for(i=0; i<=1; i++){
+                robotArm.moveRight();
+            }
+                robotArm.drop();
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
-            robotArm.speed = 100;
+            robotArm.speed = 120;
         </script>
     </body>
 </html>
