@@ -11,21 +11,26 @@
             robotArm.loadLevel("exercise 4");
             
             // Jou instructies volgen hier
-            for(a=0; a <= 3; a++){
-                    robotArm.grab();
+            for(a=0; a<3; a++){
+                robotArm.grab();
                 for(i=0; i<2; i++){
                     robotArm.moveRight();
                 }
-                    robotArm.drop();
+                robotArm.drop();
                 for(b=0; b<2; b++){
                     robotArm.moveLeft();
                 }
-            } 
+            }
+            for(c=0; c<2; c++){
+                robotArm.moveRight();
+                robotArm.grab();
+
+            }
           
             
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
-            robotArm.speed = 190;
+            robotArm.speed = 200;
         </script>
     </body>
 </html>
