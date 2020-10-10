@@ -22,6 +22,20 @@
                 }
             }
 
+            robotArm.moveRight();
+
+            for(a=0; a<3; a++){
+                for(i=0; i<1; i++){
+                    robotArm.moveRight();
+                }
+                robotArm.grab();
+                for(b=0; b<1; b++){
+                    robotArm.moveLeft();
+                }
+                robotArm.drop();
+            }
+               
+
 
             
             // De door jou opgegeven instructies uitvoeren
